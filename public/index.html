@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WexForge — Premium IT Solutions & Digital Experiences</title>
+<meta name="description" content="WexForge is a premium software studio building modern websites, web apps, AI solutions, and digital products for ambitious brands.">
+<meta name="keywords" content="WexForge, web development, IT company, UI UX design, AI solutions, custom web application, SaaS development">
+<meta name="author" content="WexForge">
+<link rel="canonical" href="https://www.wexforge.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WexForge — Premium IT Solutions">
+<meta property="og:description" content="Premium software studio building modern digital experiences for ambitious brands.">
+<meta property="og:url" content="https://www.wexforge.com/">
+<meta property="og:site_name" content="WexForge">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WexForge — Premium IT Solutions">
+<meta name="twitter:description" content="Premium software studio building modern digital experiences.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta name="theme-color" content="#FAF8F3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"WexForge","url":"https://www.wexforge.com/","description":"Premium IT studio crafting modern websites, web apps and digital products.","founder":[{"@type":"Person","name":"Khatri Aakib","jobTitle":"Co-Founder & Full Stack Developer"},{"@type":"Person","name":"Ridham Rajput","jobTitle":"Co-Founder & Frontend Developer"}]}</script>
+</head>
+<body>
+
+<!-- Background mesh -->
+<div class="bg-mesh" aria-hidden="true">
+  <div class="mesh-orb orb-1"></div>
+  <div class="mesh-orb orb-2"></div>
+  <div class="mesh-orb orb-3"></div>
+  <div class="grid-overlay"></div>
+</div>
+
+<!-- Cursor glow (desktop only) -->
+<div id="cursor-glow" aria-hidden="true"></div>
+
+<!-- Scroll progress -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<!-- Loader -->
+<div id="intro" aria-hidden="true">
+  <div class="intro-glow"></div>
+  <div class="intro-grid"></div>
+  <div class="intro-particles">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="intro-flash"></div>
+  <div class="intro-stage">
+    <div class="intro-logo-wrap">
+      <div class="intro-logo-plate"></div>
+      <div class="intro-logo-ring"></div>
+      <div class="intro-orbit"><span></span><span></span><span></span></div>
+      <img src="assets/logo.png" alt="" class="intro-logo" width="84" height="84">
+    </div>
+    <div class="intro-name">
+      <span class="intro-letter" style="--i:0">W</span><span class="intro-letter" style="--i:1">e</span><span class="intro-letter" style="--i:2">x</span><span class="intro-letter" style="--i:3">F</span><span class="intro-letter" style="--i:4">o</span><span class="intro-letter" style="--i:5">r</span><span class="intro-letter" style="--i:6">g</span><span class="intro-letter" style="--i:7">e</span>
+    </div>
+    <div class="intro-tag">Premium IT Solutions</div>
+    <div class="intro-bar"><span id="intro-fill"></span></div>
+    <div class="intro-pct" id="intro-pct">0%</div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<header id="nav" role="banner">
+  <div class="nav-wrap">
+    <a href="#top" class="nav-brand" aria-label="WexForge home">
+      <img src="assets/logo.png" alt="WexForge" width="36" height="36" loading="lazy">
+      <span>WexForge</span>
+    </a>
+    <nav class="nav-links" id="nav-links" role="navigation" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#team">Team</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-ghost btn-sm">Contact</a>
+      <a href="#contact" class="btn btn-primary btn-sm">Get Started</a>
+      <button class="nav-burger" id="nav-burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ═══ HERO ═══════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-badge" data-reveal>
+      <span class="badge-dot"></span>
+      Available for new projects
+    </div>
+    <h1 class="hero-title" data-reveal>
+      We Build<br>
+      <span class="gradient-text">Premium Digital</span><br>
+      Experiences
+    </h1>
+    <p class="hero-sub" data-reveal>
+      WexForge is a software studio crafting high-performance websites, web apps, and AI solutions for ambitious brands — from first concept to production launch.
+    </p>
+    <div class="hero-cta" data-reveal>
+      <a href="#work" class="btn btn-primary btn-lg">View Our Work</a>
+      <a href="#contact" class="btn btn-outline btn-lg">Start a Project</a>
+    </div>
+    <div class="hero-stats" data-reveal>
+      <div class="stat-item">
+        <span class="stat-num" data-counter="13" data-suffix="+">13+</span>
+        <span class="stat-label">Services</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-counter="100" data-suffix="%">100%</span>
+        <span class="stat-label">Custom Built</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-counter="2">2</span>
+        <span class="stat-label">Founders</span>
+      </div>
+    </div>
+    <div class="hero-logos" data-reveal>
+      <p class="logos-label">Trusted by forward-thinking teams</p>
+      <div class="logos-row">
+        <span>Northline</span>
+        <span>Verona Labs</span>
+        <span>Arbor & Co</span>
+        <span>Pixel Foundry</span>
+        <span>Havenly</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ════════════════════════════════════════════ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-label" data-reveal>Our Services</div>
+    <h2 class="section-title" data-reveal>Everything you need to<br><span class="gradient-text">build & ship</span></h2>
+    <p class="section-sub" data-reveal>A complete suite of digital services — pick one or combine them all.</p>
+    <div class="services-grid" data-reveal-stagger>
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <h3>Web Development</h3>
+        <p>Fast, accessible, hand-coded websites that score 95+ on Lighthouse.</p>
+        <span class="service-tag">HTML · CSS · JS</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Mobile Apps</h3>
+        <p>Progressive web apps and responsive experiences optimised for every screen.</p>
+        <span class="service-tag">PWA · Responsive</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>UI/UX Design</h3>
+        <p>Research-driven wireframes, prototypes and pixel-perfect interfaces.</p>
+        <span class="service-tag">Figma · Design Systems</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <h3>AI Solutions</h3>
+        <p>Intelligent chatbots, automation tools, and AI-powered product features.</p>
+        <span class="service-tag">Claude · OpenAI · Agents</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">☁️</div>
+        <h3>Cloud & DevOps</h3>
+        <p>Deployment pipelines, hosting setup, and cloud infrastructure handled end-to-end.</p>
+        <span class="service-tag">AWS · Vercel · Render</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛒</div>
+        <h3>E-commerce</h3>
+        <p>Conversion-first storefronts with clean catalogue, cart, and checkout flows.</p>
+        <span class="service-tag">Custom · Fast · Secure</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <h3>SaaS Development</h3>
+        <p>Custom dashboards, admin panels, and multi-tenant platforms built to scale.</p>
+        <span class="service-tag">Node.js · REST · DB</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📈</div>
+        <h3>SEO & Performance</h3>
+        <p>Technical SEO, Core Web Vitals optimisation, and Lighthouse audits.</p>
+        <span class="service-tag">SEO · Performance · CWV</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Maintenance</h3>
+        <p>Ongoing updates, monitoring, security patches, and support after launch.</p>
+        <span class="service-tag">24/7 · Updates · Fixes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHY US ═══════════════════════════════════════════════ -->
+<section class="section section-alt" id="why">
+  <div class="container">
+    <div class="section-label" data-reveal>Why WexForge</div>
+    <h2 class="section-title" data-reveal>Built different,<br><span class="gradient-text">for good reasons</span></h2>
+    <div class="why-grid" data-reveal-stagger>
+      <div class="why-card">
+        <div class="why-num">01</div>
+        <h3>Founders on every project</h3>
+        <p>You work directly with Aakib and Ridham — no account managers, no hand-offs, no dilution of quality.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02</div>
+        <h3>Performance-first code</h3>
+        <p>Lean, framework-free frontends that load instantly and score high on every audit.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03</div>
+        <h3>Accessible by default</h3>
+        <p>Semantic HTML, keyboard support, and WCAG-friendly patterns on every single build.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04</div>
+        <h3>Clean, maintainable code</h3>
+        <p>Organised, commented, modular code your team can actually read and extend.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">05</div>
+        <h3>Design with intent</h3>
+        <p>Every pixel is considered — we design for clarity, conversion, and delight.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">06</div>
+        <h3>Fast, clear communication</h3>
+        <p>We reply within hours, keep you updated at every step, and deliver on time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TECHNOLOGIES ══════════════════════════════════════════ -->
+<section class="section" id="tech">
+  <div class="container">
+    <div class="section-label" data-reveal>Tech Stack</div>
+    <h2 class="section-title" data-reveal>Tools we master</h2>
+  </div>
+  <div class="tech-marquee" aria-label="Technologies">
+    <div class="tech-track" id="tech-track">
+      <span class="tech-pill">React</span>
+      <span class="tech-pill">Next.js</span>
+      <span class="tech-pill">TypeScript</span>
+      <span class="tech-pill">Node.js</span>
+      <span class="tech-pill">Express</span>
+      <span class="tech-pill">MongoDB</span>
+      <span class="tech-pill">PostgreSQL</span>
+      <span class="tech-pill">Supabase</span>
+      <span class="tech-pill">Docker</span>
+      <span class="tech-pill">AWS</span>
+      <span class="tech-pill">Firebase</span>
+      <span class="tech-pill">Tailwind CSS</span>
+      <span class="tech-pill">Python</span>
+      <span class="tech-pill">AI / LLMs</span>
+      <span class="tech-pill">Figma</span>
+      <span class="tech-pill">HTML5</span>
+      <span class="tech-pill">CSS3</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PORTFOLIO ═════════════════════════════════════════════ -->
+<section class="section section-alt" id="work">
+  <div class="container">
+    <div class="section-label" data-reveal>Featured Work</div>
+    <h2 class="section-title" data-reveal>Concept projects<br><span class="gradient-text">&amp; demos</span></h2>
+    <p class="section-sub" data-reveal>Wexforge is a new studio — projects below are concept builds demonstrating our process and code quality.</p>
+    <div class="portfolio-single" data-reveal>
+      <article class="portfolio-card-featured">
+        <div class="pf-visual">
+          <div class="pf-badge">Concept Project</div>
+          <svg viewBox="0 0 480 300" aria-hidden="true" width="100%">
+            <defs>
+              <linearGradient id="spG" x1="0" y1="0" x2="480" y2="300" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#3B82F6"/>
+                <stop offset="50%" stop-color="#6366F1"/>
+                <stop offset="100%" stop-color="#06B6D4"/>
+              </linearGradient>
+              <radialGradient id="thrG" cx="50%" cy="100%" r="50%">
+                <stop offset="0%" stop-color="#06B6D4" stop-opacity=".8"/>
+                <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <!-- Stars -->
+            <circle cx="40" cy="30" r="1" fill="#fff" opacity=".5"/>
+            <circle cx="120" cy="18" r=".8" fill="#fff" opacity=".4"/>
+            <circle cx="220" cy="40" r="1.2" fill="#fff" opacity=".6"/>
+            <circle cx="340" cy="22" r=".9" fill="#fff" opacity=".5"/>
+            <circle cx="420" cy="35" r="1" fill="#fff" opacity=".4"/>
+            <circle cx="460" cy="12" r=".7" fill="#fff" opacity=".6"/>
+            <circle cx="80" cy="70" r=".8" fill="#fff" opacity=".3"/>
+            <circle cx="380" cy="80" r="1" fill="#fff" opacity=".35"/>
+            <!-- Orbit arc -->
+            <ellipse cx="240" cy="260" rx="180" ry="55" fill="none" stroke="url(#spG)" stroke-width="1" stroke-dasharray="6 5" opacity=".3"/>
+            <!-- Planet -->
+            <circle cx="70" cy="230" r="38" fill="url(#spG)" opacity=".07"/>
+            <circle cx="70" cy="230" r="38" fill="none" stroke="url(#spG)" stroke-width="1.2" opacity=".35"/>
+            <!-- Rocket -->
+            <g transform="translate(206,18)" class="rocket-group">
+              <path d="M34 0 Q34 0 42 26 L26 26 Z" fill="url(#spG)"/>
+              <rect x="24" y="26" width="20" height="90" rx="3" fill="url(#spG)" opacity=".9"/>
+              <path d="M24 100 L10 130 L24 124 Z" fill="#6366F1" opacity=".8"/>
+              <path d="M44 100 L58 130 L44 124 Z" fill="#6366F1" opacity=".8"/>
+              <circle cx="34" cy="62" r="7" fill="none" stroke="#22D3EE" stroke-width="1.8" opacity=".9"/>
+              <circle cx="34" cy="62" r="4" fill="#22D3EE" opacity=".2"/>
+              <path d="M27 116 Q34 123 41 116 L38 132 Q34 137 30 132 Z" fill="#3B82F6" opacity=".85"/>
+              <ellipse cx="34" cy="138" rx="12" ry="18" fill="url(#thrG)" opacity=".65"/>
+            </g>
+            <!-- Label -->
+            <text x="290" y="110" font-family="'Syne',sans-serif" font-weight="800" font-size="32" fill="url(#spG)" letter-spacing="3">SPACEX</text>
+            <text x="290" y="135" font-family="'Inter',sans-serif" font-size="11" fill="#64748B" letter-spacing="2">CONCEPT WEBSITE</text>
+            <rect x="290" y="152" width="84" height="32" rx="8" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.25)" stroke-width="1"/>
+            <text x="332" y="164" font-family="'Inter',sans-serif" font-weight="600" font-size="9" fill="#93C5FD" text-anchor="middle">MISSIONS</text>
+            <text x="332" y="177" font-family="'Syne',sans-serif" font-weight="800" font-size="12" fill="#fff" text-anchor="middle">200+</text>
+            <rect x="384" y="152" width="84" height="32" rx="8" fill="rgba(6,182,212,0.08)" stroke="rgba(6,182,212,0.22)" stroke-width="1"/>
+            <text x="426" y="164" font-family="'Inter',sans-serif" font-weight="600" font-size="9" fill="#67E8F9" text-anchor="middle">LIGHTHOUSE</text>
+            <text x="426" y="177" font-family="'Syne',sans-serif" font-weight="800" font-size="12" fill="#fff" text-anchor="middle">98 / 100</text>
+          </svg>
+        </div>
+        <div class="pf-body">
+          <span class="pf-cat">Business Website</span>
+          <h3 class="pf-title">SpaceX</h3>
+          <p class="pf-desc">A high-impact concept website for SpaceX — showcasing mission launches, Starship updates, and reusable rocket technology with a bold, immersive dark-space aesthetic built for performance.</p>
+          <div class="pf-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Node.js</span><span>REST API</span>
+          </div>
+          <div class="pf-actions">
+            <button class="btn btn-outline btn-sm view-details">View Details</button>
+            <a href="https://space-explorer-ruby.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROCESS ═══════════════════════════════════════════════ -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="section-label" data-reveal>Our Process</div>
+    <h2 class="section-title" data-reveal>How we work —<br><span class="gradient-text">every time</span></h2>
+    <p class="section-sub" data-reveal>A consistent 8-step sequence that keeps every project predictable and on-track.</p>
+    <div class="process-grid" data-reveal-stagger>
+      <div class="process-step">
+        <div class="ps-num">01</div>
+        <div class="ps-body">
+          <h3>Discovery</h3>
+          <p>Understanding your goals, audience and what success looks like.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">02</div>
+        <div class="ps-body">
+          <h3>Planning</h3>
+          <p>Scoping pages, features and a realistic timeline.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">03</div>
+        <div class="ps-body">
+          <h3>Design</h3>
+          <p>Wireframes and UI design before any production code is written.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">04</div>
+        <div class="ps-body">
+          <h3>Development</h3>
+          <p>Building clean, semantic, production-ready code.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">05</div>
+        <div class="ps-body">
+          <h3>Testing</h3>
+          <p>Checking responsiveness, performance and accessibility.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">06</div>
+        <div class="ps-body">
+          <h3>Launch</h3>
+          <p>Shipping to production with a smooth, monitored deployment.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">07</div>
+        <div class="ps-body">
+          <h3>Support</h3>
+          <p>Staying available for updates and fixes after go-live.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TEAM ══════════════════════════════════════════════════ -->
+<section class="section section-alt" id="team">
+  <div class="container">
+    <div class="section-label" data-reveal>The Founders</div>
+    <h2 class="section-title" data-reveal>Two developers,<br><span class="gradient-text">one studio</span></h2>
+    <p class="section-sub" data-reveal>Every project is built directly by the two of us — design, code and delivery.</p>
+    <div class="team-grid" data-reveal-stagger>
+      <div class="team-card" data-tilt>
+        <div class="team-avatar">KA</div>
+        <h3>Khatri Aakib</h3>
+        <p class="team-role">Co-Founder &amp; Full Stack Developer</p>
+        <p class="team-bio">Leads architecture, backend logic and integrations — making sure every build is solid underneath the surface.</p>
+        <div class="team-links">
+          <a href="tel:+919909378606" aria-label="Call Aakib">📞 +91 99093 78606</a>
+          <a href="mailto:aakibkhatri99@gmail.com" aria-label="Email Aakib">✉️ aakibkhatri99@gmail.com</a>
+        </div>
+      </div>
+      <div class="team-card" data-tilt>
+        <div class="team-avatar">RR</div>
+        <h3>Ridham Rajput</h3>
+        <p class="team-role">Co-Founder &amp; Frontend Developer</p>
+        <p class="team-bio">Leads interface design and front-end craft — turning wireframes into fast, polished experiences.</p>
+        <div class="team-links">
+          <a href="tel:+917874676086" aria-label="Call Ridham">📞 +91 78746 76086</a>
+          <a href="mailto:ridhamrajputx18@gmail.com" aria-label="Email Ridham">✉️ ridhamrajputx18@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══════════════════════════════════════════════════ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-label" data-reveal>FAQ</div>
+    <h2 class="section-title" data-reveal>Common<br><span class="gradient-text">questions</span></h2>
+    <div class="faq-list" data-reveal-stagger>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How long does a typical project take? <span class="faq-icon"></span></button>
+        <div class="faq-a" role="region"><p>A marketing site usually takes 2–4 weeks; custom web applications vary depending on scope — you'll get a clear timeline after the planning stage.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you work with an existing design or brand? <span class="faq-icon"></span></button>
+        <div class="faq-a" role="region"><p>Yes. We can design from scratch or build within an existing brand system — we'll align on this during discovery.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What technologies do you build with? <span class="faq-icon"></span></button>
+        <div class="faq-a" role="region"><p>HTML5, CSS3, and modern JavaScript on the front end, with Node.js, REST APIs, and cloud infrastructure on the backend — chosen per project needs.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you offer ongoing maintenance after launch? <span class="faq-icon"></span></button>
+        <div class="faq-a" role="region"><p>Yes — website maintenance is one of our core services: updates, monitoring, and fixes after launch.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How do we get started? <span class="faq-icon"></span></button>
+        <div class="faq-a" role="region"><p>Book a meeting or send a message through the contact form below, and we'll reply with next steps — usually within one business day.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you work with international clients? <span class="faq-icon"></span></button>
+        <div class="faq-a" role="region"><p>Absolutely. We work with clients globally and communicate asynchronously across time zones. All project management is handled online.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ════════════════════════════════════════════════ -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="section-label" data-reveal>Contact</div>
+    <h2 class="section-title" data-reveal>Tell us about<br><span class="gradient-text">your project</span></h2>
+    <p class="section-sub" data-reveal>Share a few details and we'll get back to you within one business day.</p>
+    <div class="contact-layout" data-reveal>
+      <!-- Info panel -->
+      <div class="contact-info">
+        <div class="ci-block">
+          <h3>Let's talk</h3>
+          <p>Reach out directly — both founders read every message.</p>
+        </div>
+        <div class="ci-links">
+          <a href="mailto:aakibkhatri99@gmail.com" class="ci-link">
+            <span class="ci-icon">✉️</span>
+            <span>aakibkhatri99@gmail.com</span>
+          </a>
+          <a href="tel:+919909378606" class="ci-link">
+            <span class="ci-icon">📞</span>
+            <span>+91 99093 78606 — Aakib</span>
+          </a>
+          <a href="mailto:ridhamrajputx18@gmail.com" class="ci-link">
+            <span class="ci-icon">✉️</span>
+            <span>ridhamrajputx18@gmail.com</span>
+          </a>
+          <a href="tel:+917874676086" class="ci-link">
+            <span class="ci-icon">📞</span>
+            <span>+91 78746 76086 — Ridham</span>
+          </a>
+        </div>
+        <div class="ci-cta">
+          <a href="https://wa.me/919909378606" target="_blank" rel="noopener" class="btn btn-primary btn-sm">WhatsApp</a>
+          <a href="tel:+919909378606" class="btn btn-outline btn-sm">Call Now</a>
+        </div>
+      </div>
+      <!-- Contact form — DO NOT CHANGE FIELD IDs (connected to Supabase) -->
+      <form class="contact-form" id="contact-form" novalidate autocomplete="on">
+        <div class="form-row">
+          <div class="field">
+            <label for="cf-name">Name <span class="req" aria-label="required">*</span></label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required placeholder="Your full name">
+            <p class="field-error" role="alert">Please enter your name.</p>
+          </div>
+          <div class="field">
+            <label for="cf-phone">Phone</label>
+            <input type="tel" id="cf-phone" name="phone" autocomplete="tel" placeholder="+91 00000 00000">
+            <p class="field-error" role="alert">Please enter a valid phone number.</p>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="cf-email">Email <span class="req" aria-label="required">*</span></label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required placeholder="you@company.com">
+            <p class="field-error" role="alert">Please enter a valid email address.</p>
+          </div>
+          <div class="field">
+            <label for="cf-company">Company</label>
+            <input type="text" id="cf-company" name="company" autocomplete="organization" placeholder="Company name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="cf-type">Project Type</label>
+            <select id="cf-type" name="projectType">
+              <option value="">Select an option</option>
+              <option>Business Website</option>
+              <option>Portfolio Website</option>
+              <option>Landing Page</option>
+              <option>E-commerce Website</option>
+              <option>Custom Web Application</option>
+              <option>Admin Dashboard</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cf-budget">Budget</label>
+            <select id="cf-budget" name="budget">
+              <option value="">Select a range</option>
+              <option>Under ₹25,000</option>
+              <option>₹25,000 – ₹75,000</option>
+              <option>₹75,000 – ₹2,00,000</option>
+              <option>Above ₹2,00,000</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="cf-message">Message <span class="req" aria-label="required">*</span></label>
+          <textarea id="cf-message" name="message" required placeholder="Tell us a little about the project..."></textarea>
+          <p class="field-error" role="alert">Please add a short message.</p>
+        </div>
+        <!-- Honeypot — DO NOT REMOVE -->
+        <input type="text" name="company_website" id="cf-honeypot" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" aria-hidden="true">
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        <p class="form-note">Your message is saved securely — typical reply time is one business day.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════ -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="nav-brand" aria-label="WexForge home">
+          <img src="assets/logo.png" alt="WexForge" width="32" height="32" loading="lazy">
+          <span>WexForge</span>
+        </a>
+        <p>A software studio crafting premium digital experiences — fast, accessible, and built to last.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn" onclick="return false">in</a>
+          <a href="#" aria-label="GitHub" onclick="return false">gh</a>
+          <a href="#" aria-label="Instagram" onclick="return false">ig</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="fl-col">
+          <h4>Navigate</h4>
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#process">Process</a>
+          <a href="#team">Team</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="fl-col">
+          <h4>Services</h4>
+          <a href="#services">Web Development</a>
+          <a href="#services">Mobile Apps</a>
+          <a href="#services">UI/UX Design</a>
+          <a href="#services">AI Solutions</a>
+          <a href="#services">E-commerce</a>
+          <a href="#services">Maintenance</a>
+        </div>
+        <div class="fl-col">
+          <h4>Contact</h4>
+          <a href="mailto:aakibkhatri99@gmail.com">aakibkhatri99@gmail.com</a>
+          <a href="tel:+919909378606">+91 99093 78606</a>
+          <a href="mailto:ridhamrajputx18@gmail.com">ridhamrajputx18@gmail.com</a>
+          <a href="tel:+917874676086">+91 78746 76086</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> WexForge. All rights reserved.</span>
+      <button id="back-to-top" aria-label="Back to top">↑</button>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ CHATBOT ═══════════════════════════════════════════════ -->
+<div id="chatbot-root">
+  <button id="chatbot-launcher" aria-label="Open WexForge Assistant" aria-expanded="false">
+    <svg class="ico-chat" viewBox="0 0 24 24" fill="none" width="24" height="24" aria-hidden="true"><path d="M4 12a8 8 0 1 1 3.2 6.4L4 20l1.2-3.4A7.96 7.96 0 0 1 4 12Z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8.5" cy="12" r="1" fill="#fff"/><circle cx="12" cy="12" r="1" fill="#fff"/><circle cx="15.5" cy="12" r="1" fill="#fff"/></svg>
+    <svg class="ico-close" viewBox="0 0 24 24" fill="none" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+    <span class="launcher-ping" aria-hidden="true"></span>
+  </button>
+  <div class="chatbot-panel" id="chatbot-panel" role="dialog" aria-label="WexForge Assistant" aria-hidden="true">
+    <div class="chatbot-header">
+      <div class="cb-header-id">
+        <div class="cb-avatar" aria-hidden="true">WF</div>
+        <div>
+          <p class="cb-title">WexForge Assistant</p>
+          <p class="chatbot-status"><span class="status-dot"></span> Online · replies instantly</p>
+        </div>
+      </div>
+      <div class="cb-actions">
+        <button id="chatbot-clear" title="Clear chat" aria-label="Clear conversation">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M4 7h16M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2m2 0-.8 12.1A2 2 0 0 1 14.2 21H9.8a2 2 0 0 1-2-1.9L7 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button id="chatbot-minimize" title="Close" aria-label="Close chat">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages" aria-live="polite"></div>
+    <div class="chatbot-chips" id="chatbot-chips"></div>
+    <form class="chatbot-input-row" id="chatbot-form">
+      <input type="text" id="chatbot-input" placeholder="Ask anything..." autocomplete="off" aria-label="Type a message">
+      <button type="submit" id="chatbot-send" aria-label="Send message">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M4 12l16-8-6 8 6 8-16-8Z" stroke="#fff" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      </button>
+    </form>
+    <p class="chatbot-disclaimer" id="chatbot-disclaimer">Powered by Claude · ask anything about WexForge</p>
+  </div>
+</div>
+
+<script src="js/main.js" defer></script>
+<script src="js/chatbot.js" defer></script>
+</body>
+</html>
