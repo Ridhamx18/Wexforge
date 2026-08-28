@@ -267,25 +267,22 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btn) { btn.disabled = true; btn.textContent = 'Sending...'; }
     if (status) { status.textContent = ''; status.className = 'form-status'; }
     try {
-      const SB_URL = 'https://mueazgfeyguleygqsmhe.supabase.co';
-      const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im11ZWF6Z2ZleWd1bGV5Z3FzbWhlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4MDM3MDI2MCwiZXhwIjoyMDk1OTQ2MjYwfQ.Ga0QhknZ7i4gU_KA39H_wd8TrcAxyvjrbfcB3ChZZds';
-      const entry = {
-        id: Date.now().toString(36) + Math.random().toString(36).slice(2,8),
-        received_at: new Date().toISOString(),
-        name: document.getElementById('cf-name').value.trim(),
-        email: document.getElementById('cf-email').value.trim(),
-        phone: document.getElementById('cf-phone').value.trim() || null,
-        company: document.getElementById('cf-company').value.trim() || null,
-        project_type: document.getElementById('cf-type').value || null,
-        budget: document.getElementById('cf-budget').value || null,
-        message: document.getElementById('cf-message').value.trim(),
+      const payload = {
+        name:        document.getElementById('cf-name').value.trim(),
+        email:       document.getElementById('cf-email').value.trim(),
+        phone:       document.getElementById('cf-phone').value.trim() || '',
+        company:     document.getElementById('cf-company').value.trim() || '',
+        projectType: document.getElementById('cf-type').value || '',
+        budget:      document.getElementById('cf-budget').value || '',
+        message:     document.getElementById('cf-message').value.trim(),
       };
-      const res = await fetch(`${SB_URL}/rest/v1/contact_submissions`, {
+      const res = await fetch(getApiBase() + '/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'apikey': SB_KEY, 'Authorization': `Bearer ${SB_KEY}`, 'Prefer': 'return=minimal' },
-        body: JSON.stringify(entry),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
       });
-      if (!res.ok) { const err = await res.json().catch(() => ({})); throw new Error(err.message || 'Save failed'); }
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || 'Submission failed');
       if (status) { status.textContent = 'Thanks! Your message has been sent — WexForge will reply within one business day.'; status.className = 'form-status show success'; }
       form.reset();
     } catch (err) {
